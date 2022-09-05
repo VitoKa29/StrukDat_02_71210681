@@ -29,7 +29,7 @@ def rec_fibo(n):
 #record data fibo iteratif
 
 print("="*15+"Fibbonaci Iteratif"+"="*15)
-for i in range(1, 40):
+for i in range(1, 101):
     start = timeit.default_timer()
     hasil = iter_fibo(i)
     end = timeit.default_timer()
