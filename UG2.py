@@ -1,4 +1,4 @@
-import time
+import timeit
 
 #Fibbonaci Iteratif
 def iter_fibo(n):
@@ -30,9 +30,9 @@ def rec_fibo(n):
 
 print("="*15+"Fibbonaci Iteratif"+"="*15)
 for i in range(1, 40):
-    start = time.time()
+    start = timeit.default_timer()
     hasil = iter_fibo(i)
-    end = time.time()
+    end = timeit.default_timer()
     print(f'Fibonacci deret ke-{i} adalah {hasil}. Dengan fungsi iteratif, membutuhkan waktu {end-start} detik')
 
 print()
@@ -43,7 +43,7 @@ print()
 
 print("="*15+"Fibbonaci Rekursif"+"="*15)
 for i in range(1, 40):
-    start = time.time()
+    start = timeit.default_timer()
     hasil = rec_fibo(i)
-    end = time.time()
+    end = timeit.default_timer()
     print(f'Fibonacci deret ke-{i} adalah {hasil}. Dengan fungsi rekursif, membutuhkan waktu {end-start} detik')
