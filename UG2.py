@@ -42,7 +42,7 @@ print()
 #record data fibo rekursif
 
 print("="*15+"Fibbonaci Rekursif"+"="*15)
-for i in range(1, 40):
+for i in range(1, 101):
     start = timeit.default_timer()
     hasil = rec_fibo(i)
     end = timeit.default_timer()
